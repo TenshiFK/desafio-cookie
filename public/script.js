@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const elementoServidor = document.getElementById('id-coockie');
 
     //requisção
-    fetch("/cookie", {
+    fetch("/https://desafio-cookie-ojrb0jw1d-flavias-projects-5588c827.vercel.app/cookie", {
         credentials: 'include'
     })
     .then(response => response.json()) 
