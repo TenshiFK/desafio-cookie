@@ -16,6 +16,10 @@ app.use(
 
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 app.get('/cookie', (req, res) => {
     res.cookie('name', 'Desafio', {
         maxAge: 5000,
