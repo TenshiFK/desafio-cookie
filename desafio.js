@@ -20,7 +20,7 @@ app.get('/cookie', (req, res) => {
     res.cookie('name', 'Desafio', {
         maxAge: 5000,
         expires: new Date('12 11 2030'),
-        secure: true,
+        //secure: true,
         httpOnly:true,
         sameSite: 'lax',
         signed: true,
