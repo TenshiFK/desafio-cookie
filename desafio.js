@@ -16,7 +16,7 @@ app.use(
 
 app.use(express.static('public'));
 
-app.get('https://desafio-cookie.vercel.app/cookie', (req, res) => {
+app.get('/cookie', (req, res) => {
     res.cookie('name', 'Desafio', {
         maxAge: 5000,
         expires: new Date('12 11 2030'),
